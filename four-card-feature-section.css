@@ -1,0 +1,90 @@
+
+
+/* ------------------------------  typography  ---------------------------------*/
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 200;
+    color: hsl(229, 6%, 66%);
+    margin-bottom: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+    margin-top: 0;
+}
+
+.body-text {
+    font-size: 0.9rem;
+    font-weight: 200;
+    color: hsl(229, 6%, 66%);
+}
+
+#header {
+    text-align: center;
+    margin: 0 1rem 0 1rem;
+}
+
+.card-title {
+    margin: auto;
+    font-weight: 600;
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+/* ------------------------------  positioning  ---------------------------------*/
+#cards-field {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#middle-col {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem 0 1rem;
+}
+
+
+svg {
+    position: absolute;
+    right: 1.5rem;
+    bottom: 1.5rem;
+}
+
+#supervisor, #calculator {
+    align-self: center;
+}
+
+#supervisor, #team-builder, #calculator, #karma {
+    height: 13rem;
+    width: calc(375px - 3rem);
+    margin: 1rem;
+    padding: 1rem 1.5rem;
+
+    position: relative;
+
+    border: solid 0 black;
+    border-radius: 4px 4px 10px 10px;
+    border-top: solid 5px hsl(180, 62%, 55%);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#team-builder {border-top: solid 5px hsl(0, 78%, 62%);}
+#calculator {border-top: solid 5px hsl(212, 86%, 64%);}
+#karma {border-top: solid 5px hsl(34, 97%, 64%);}
+
+/* ------------------------------  media query ---------------------------------*/
+
+@media (max-width: 1280px) and (min-width: 860px) {
+    #middle-col {
+        flex-direction: row;
+    }
+}
